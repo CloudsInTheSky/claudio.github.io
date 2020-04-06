@@ -1,5 +1,32 @@
-$bakground : black;
+$bakground : lightgrey;
 
-.background {
+body {
     background-color: $bakground;
+    padding: 1% 8%;
+}
+
+h1 {
+    display: none;
+}
+
+.wrap {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 80%;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }

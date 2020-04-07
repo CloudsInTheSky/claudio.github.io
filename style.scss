@@ -1,21 +1,37 @@
-$bakground : lightgrey;
+$bakground : #001a33;
+$docfont: 'Sen', sans-serif;
+$bold: 700;
+$pfontsize: 14px;
 
 body {
     background-color: $bakground;
-    padding: 1% 8%;
+    padding: 1% 10%;
+    color: white;
+    font-family: $docfont;
+    letter-spacing: 1px;
+    line-height: 24px;
 }
 
 nav li {
     display: inline;
+    
+}
+
+li{
+    line-height: 30px;
 }
 
 h1 {
     display: none;
 }
 
+h2 {
+    margin: 10% 0%;
+}
+
 .wrap {
     display: flex;
-    direction: row;
+    
     flex-wrap: wrap;
     align-items: baseline;
     width: 80%;
@@ -25,7 +41,7 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 2;
+    flex: 3;
 }
 
 .column {
@@ -33,4 +49,12 @@ h1 {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
 }

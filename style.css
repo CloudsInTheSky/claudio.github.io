@@ -1,22 +1,37 @@
 body {
-  background-color: #001a33;
-  padding: 1% 10%;
-  color: white;
+  background: #001a33;
+  background: linear-gradient(177deg, #001a33 41%, #123863 100%);
+  padding: 5% 5%;
+  color: black;
   font-family: "Sen", sans-serif;
   letter-spacing: 1px;
   line-height: 24px;
 }
 
-nav li {
-  display: inline;
+.container {
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 0%;
+  padding: 5% 10%;
+  border-radius: 5px;
+}
+
+.no-show {
+  display: none;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: #001a33;
 }
 
 li {
-  line-height: 30px;
-}
-
-h1 {
-  display: none;
+  list-style-type: none;
+  padding-bottom: 5%;
+  margin-left: -15%;
 }
 
 h2 {
@@ -27,12 +42,16 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  width: 80%;
+  width: 100%;
 }
 
 .two-column {
@@ -45,9 +64,10 @@ h2 {
           flex-direction: column;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding-right: 10%;
 }
 
 .column {
@@ -63,13 +83,16 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-right: -20px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   right: 0;
+  background-color: #0a2b4f;
   width: 100%;
   text-align: center;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
